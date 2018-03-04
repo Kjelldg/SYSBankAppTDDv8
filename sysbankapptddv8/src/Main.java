@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		String gitTest = "Det funkade!";
+		String gitTest_eclipse = "Det funkade!";
 		float balance = 100;
 		Scanner scanner = new Scanner(System.in);
 		int switchCaseInt = 0;
