@@ -8,6 +8,7 @@ public class Main {
 		
 		String gitTest = "Det funkade!";
 		String gitTest_eclipse = "Det funkade!";
+		String gitTest_eclipse_2 = "Det funkade!";
 		float balance = 100;
 		Scanner scanner = new Scanner(System.in);
 		int switchCaseInt = 0;
