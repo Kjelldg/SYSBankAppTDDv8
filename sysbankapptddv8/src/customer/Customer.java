@@ -3,6 +3,7 @@ package customer;
 public class Customer {
 	
 	float accountBalance;
+	double interest = 1.67;
 	String firstName;
 	
 	
@@ -11,6 +12,22 @@ public class Customer {
 		this.accountBalance = accountBalance;
 		this.firstName = firstName;
 	}
+
+
+	
+	
+	public double getInterest() {
+		return interest;
+	}
+
+
+
+
+	public void setInterest(double interest) {
+		this.interest = interest;
+	}
+
+
 
 
 	public float getAccountBalance() {
