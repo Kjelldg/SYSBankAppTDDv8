@@ -6,7 +6,7 @@ public class Customer {
 	
 	float accountBalance;
 	
-	double interestPercent = 1.67;
+	double interestPercent = 0.0167;
 	Date creationYear = new Date();
 	SimpleDateFormat yearFormat = 
 			new SimpleDateFormat ("yyyy.MM.dd");
@@ -20,12 +20,10 @@ public class Customer {
 		this.firstName = firstName;
 	}
 	
-	public double interestCalculationYears (double accountBalance) {
-		double interestCalculation = 0;
-		interestCalculation = accountBalance * interestPercent;
-		
-		
-		
+	public double interestCalculationYears (double accountBalance, int yearsElapsed) {
+		double interestCalculation = 
+				accountBalance * interestPercent * yearsElapsed;
+				
 		return interestCalculation;
 	}
 
@@ -37,13 +35,9 @@ public class Customer {
 	}
 
 
-
-
 	public void setInterestPercent(double interestPercent) {
 		this.interestPercent = interestPercent;
 	}
-
-
 
 
 	public float getAccountBalance() {
@@ -65,6 +59,5 @@ public class Customer {
 		this.firstName = firstName;
 	}
 
-	
-	
+		
 }

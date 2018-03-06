@@ -23,7 +23,7 @@ public class Main {
 		
 		
 		
-		Customer newCustomer = new Customer(100, "Kjell");
+		Customer newCustomer = new Customer(200, "Kjell");
 		
 		while (true) {
 			
@@ -36,7 +36,7 @@ public class Main {
 				break;
 			case 2: System.out.println("Test");
 				break;
-			case 3: System.out.println(newCustomer.interestCalculationYears(100));
+			case 3: System.out.println(newCustomer.getAccountBalance() + newCustomer.interestCalculationYears(newCustomer.getAccountBalance(), 4));
 				break;
 			}
 			
