@@ -1,9 +1,16 @@
 package customer;
+import java.util.Date;
+import java.text.*;
 
 public class Customer {
 	
 	float accountBalance;
-	double interest = 1.67;
+	
+	double interestPercent = 1.67;
+	Date creationYear = new Date();
+	SimpleDateFormat yearFormat = 
+			new SimpleDateFormat ("yyyy.MM.dd");
+	
 	String firstName;
 	
 	
@@ -12,19 +19,28 @@ public class Customer {
 		this.accountBalance = accountBalance;
 		this.firstName = firstName;
 	}
+	
+	public double interestCalculationYears (double accountBalance) {
+		double interestCalculation = 0;
+		interestCalculation = accountBalance * interestPercent;
+		
+		
+		
+		return interestCalculation;
+	}
 
 
 	
 	
-	public double getInterest() {
-		return interest;
+	public double getInterestPercent() {
+		return interestPercent;
 	}
 
 
 
 
-	public void setInterest(double interest) {
-		this.interest = interest;
+	public void setInterestPercent(double interestPercent) {
+		this.interestPercent = interestPercent;
 	}
 
 
