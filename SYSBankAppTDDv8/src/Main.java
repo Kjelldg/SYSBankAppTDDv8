@@ -5,6 +5,7 @@ import java.util.Date;
 import java.text.*;
 
 import customer.Customer;
+import bankServices.*;
 
 public class Main {
 
@@ -24,6 +25,12 @@ public class Main {
 		
 		
 		Customer newCustomer = new Customer(200, "Kjell");
+		
+		BankServices bankCustomer = new BankServices(100, newCustomer);
+		
+		System.out.println();
+		
+		
 		
 		while (true) {
 			
